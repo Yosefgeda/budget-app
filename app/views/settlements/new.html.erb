@@ -13,6 +13,7 @@
 <div class="form-container">
         <%= form.text_field :name, placeholder: "Name", class: "new-group-form" %>
         <%= form.text_field :amount, placeholder: "Amount", class: "new-group-form" %>
-         <%= form.submit "CREATE", class: "submit-button", class: "submit-button-group" %>
+        <%= form.text_field :group, placeholder: "Category", class: "new-group-form" %>
+        <%= form.submit "CREATE", class: "submit-button", class: "submit-button-group" %>
     </div>
 <% end %>

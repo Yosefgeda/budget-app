@@ -69,7 +69,7 @@
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->You can view the final page [HERE]()
+>You can view the final page [HERE](https://budget-app-2mtr.onrender.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -77,8 +77,6 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 roject presentation <a name="live-demo"></a>
-
->link to deployed project.
 
 - [presentation](https://www.loom.com/share/429a353083f640598da235e1fc4f6b87 sid=230641f2-c95a-4a6b-b641-bac1f11e2dd2)
 
