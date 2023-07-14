@@ -1,0 +1,18 @@
+<div class="nav-bar">
+     <a href="<%= groups_path %>">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    <h2>New Transaction</h2>
+    <a href="<%= destroy_user_session_path %>">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+</div>
+
+<%= form_with(model: @settlement, url: group_settlements_path) do |form| %>
+   
+<div class="form-container">
+        <%= form.text_field :name, placeholder: "Name", class: "new-group-form" %>
+        <%= form.text_field :amount, placeholder: "Amount", class: "new-group-form" %>
+         <%= form.submit "CREATE", class: "submit-button", class: "submit-button-group" %>
+    </div>
+<% end %>

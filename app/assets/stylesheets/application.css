@@ -1,15 +1,251 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alert {
+  color: red;
+}
+
+.notice {
+  color: green;
+}
+
+body {
+  background-color: beige;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.splash-header {
+  color: rgb(87, 85, 85);
+  text-align: center;
+  margin-top: 20%;
+  font-family: "Lobster", cursive;
+}
+
+.login-logout {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10%;
+  gap: 5px;
+}
+
+.navbar-link {
+  text-align: center;
+  font-size: x-large;
+  color: rgb(87, 85, 85);
+  padding: 3%;
+  margin: 0 4%;
+  border-radius: 5px;
+}
+
+.log-in {
+  background-color: rgb(78, 78, 243);
+  color: rgb(231, 222, 222);
+}
+
+.log-in:hover {
+  color: white;
+}
+
+.nav-bar {
+  background-color: rgb(78, 78, 243);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 2%;
+  color: white;
+}
+
+.field {
+  margin: 2%;
+}
+
+.large-email-field {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-color: rgb(119, 118, 118);
+  padding-left: 5px;
+}
+
+.large-email-field::placeholder {
+  color: rgb(85, 83, 83);
+}
+
+.fa-arrow-left {
+  color: white;
+}
+
+.actions {
+  text-align: center;
+}
+
+.login-btn {
+  width: 70%;
+  padding: 2%;
+  background-color: rgb(78, 78, 243);
+  color: rgb(212, 208, 208);
+  border: none;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.checkbox-wrapper {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.checkbox-label {
+  color: #333;
+}
+
+.forgot-container {
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-password {
+  color: #333;
+}
+
+.groups-container {
+  background-color: #c9c2c2;
+  height: 100vh;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.add-group-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: green;
+  padding: 4%;
+  width: 92%;
+  position: absolute;
+  bottom: 0;
+}
+
+.group-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.add-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  gap: 5px;
+  padding-top: 2%;
+  background-color: #eeeaea;
+}
+
+.new-group-form {
+  width: 95%;
+  height: 50px;
+  padding-left: 5px;
+  border: none;
+}
+
+.new-group-form::placeholder {
+  color: rgb(173, 169, 169);
+}
+
+.submit-button-group {
+  border: none;
+  background-color: rgb(6, 202, 6);
+  padding: 3% 10%;
+  color: rgb(206, 202, 202);
+  margin-top: 7%;
+  border-radius: 3px;
+}
+
+.submit-button-group:hover {
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+
+#payments {
+  height: 100vh;
+  background-color: #eeeaea;
+}
+
+.single-settlement {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.add-category-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  padding: 4%;
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+  color: white;
+}
+
+.transaction-add-btn {
+  color: white;
+}
+
+.sign_up_head {
+  text-align: center;
+  background-color: rgb(41, 41, 216);
+  color: white;
+  padding: 2%;
+}
+
+.sign-up {
+  width: 100%;
+  height: 50px;
+  border: #c9c2c2;
+  padding-left: 4px;
+}
+
+.sign-up::placeholder {
+  font-size: larger;
+}
+
+.login-sign-up {
+  text-align: center;
+  margin-top: 2%;
+}

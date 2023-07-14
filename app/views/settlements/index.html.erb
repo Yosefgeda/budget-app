@@ -1,0 +1,32 @@
+<div class="nav-bar">
+   <a href="<%= groups_path %>">
+    <i class="fa-solid fa-arrow-left"></i>
+  </a>
+    <h2>My Transactions</h2>
+    <a href="<%= destroy_user_session_path %>">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+</div>
+
+
+<div id="payments">
+
+    <% if @settlements.empty? %>
+        <p class="no-data">No transactions here yet.</p>
+        <% else %>
+        <% @settlements.each do |settlement| %>
+            <div class="single-settlement">
+                <p class="settlement-name"><%= settlement.name %></p>
+                <p>Price: $ <%= settlement.amount %> </p>
+            </div>
+        <% end %>
+    <% end %>
+
+    <div class="add-category-link">     
+        <div class="add-category">
+            <i class="fa-solid fa-plus"></i>
+            <%= link_to "ADD TRANSACTION", new_group_settlement_path, class: "transaction-add-btn" %>
+        </div>
+    </div>
+
+</div>

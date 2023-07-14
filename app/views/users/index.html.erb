@@ -1,0 +1,10 @@
+<h1 class="splash-header">BudgetBuddy</h1>
+
+<div class="login-logout">
+      <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link log-out'  %>
+      <% else %>
+        <%= link_to "LOG IN", new_user_session_path, :class => 'navbar-link log-in'  %>
+        <%= link_to "SIGN UP", new_user_registration_path, :class => 'navbar-link'  %> 
+      <% end %>
+</div>

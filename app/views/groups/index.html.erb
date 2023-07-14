@@ -1,0 +1,30 @@
+<div class="nav-bar">
+    <i class="fa-solid fa-bars"></i>
+    <h2>My Groups</h2>
+    <a href="<%= destroy_user_session_path %>">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+</div>
+<div class="groups-container">
+    <% if @groups.empty? %>
+        <p class="no-data">You have no groups yet.</p>
+    <% else %>
+        <% @groups.each do |group| %>
+            <a href="<%= group_settlements_path(group.id) %>">
+                <div class="group">
+                    <img src="<%= group.icon %>" alt="icon" class="group-icon" />
+                    <p class="cname"><%= group.name %></p>
+                    <p class="ctotal">Total: $ <%= group.total_transaction_amount %> </p>
+                </div>
+            </a>
+        <% end %>
+  <% end %>
+  <div class="add-group-container">
+    <a href="/groups/new" class="add-group-link">
+        <div class="add-group">
+            <i class="fa-solid fa-plus"></i>
+            <p class="button-name">ADD GROUP</p>
+        </div>   
+    </a>
+  </div>
+</div>
